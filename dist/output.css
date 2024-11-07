@@ -2503,20 +2503,8 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/assets\/hero\/bg\.jpg\'\)\] {
+.bg-hero {
   background-image: url('/assets/hero/bg.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/hero\/bg\.jpg\'\)\] {
-  background-image: url('./assets/hero/bg.jpg');
 }
 
 .from-green-300 {
