@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Page 1</title>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-30 bg-transparent">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+                <!-- Logo -->
+                <a href="">
+                    <!-- <h5 class="text-white text-[24px] py-4">Edugo</h5> -->
+                    <img src="assets/hero/logo.png" alt="" class="w-[90px] h-[100px] lg:w-[100px]">
+                </a>
+                <!-- Toggle Button -->
+                <div class="flex items-center">
+                    <button id="burger" name="burger" type="button" class="block absolute right-2 lg:hidden">
+                        <span class="burger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="burger-line transition duration-300 ease-in-out"></span>
+                        <span class="burger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-gray-200 shadow-lg w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group w-1/5">
+                                <a href="index.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white ">Home</a>
+                            </li>
+                            <li class="group w-1/4">
+                                <a href="page1.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Materi</a>
+                            </li>
+                            <li class="group w-full">
+                                <a href=""
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Indikator Pembelajaran</a>
+                            </li>
+                            <li class="group w-1/5">
+                                <a href=""
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Kuis</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <!-- Header Content -->
+        <section
+            class="hero-page h-[250px] xl:h-[350px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed relative z-20">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div class="hero__text w-[567px] xl:w-[900px] flex flex-col items-center text-[#EDEDED]">
+                    <h1 class="text-[24px] mt-6 text-center font-bold lg:text-[48px]">Tujuan dan Indikator Capaian Pembelajaran</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="content-page my-20">
+            <div class="container mx-auto block">
+                <div class="hidden lg:flex lg:items-center lg:justify-between mb-14">
+                    <p class="text-[28px] mb-2 lg:mb-0">Tujuan Pembelajaran</p>
+                    <p class="text-[28px] mb-2 lg:mb-0">Cakupan Pembelajaran</p>
+                </div>
+                <div class="lg:flex lg:gap-10">
+                    <div class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6">
+                                    <p class="text-[24px] text-[#292929] mb-1">Mobilitas Sosial
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Setelah mengikuti pembelajaran pada
+                                        materi “Mobilitas Sosial”, siswa diharapkan mampu:
+                                    <ol class="text-[16px] text-[#888888] mb-6">
+                                        <li class="pl-3">A. Menjelaskan pengertian mobilitas sosial dan pentingnya dalam
+                                            masyarakat.
+                                        </li>
+                                        <li class="pl-3">B. Mengidentifikasi dan menjelaskan mobilitas vertikal dan
+                                            horizontal dalam
+                                            konteks kehidupan sehari-hari.</li>
+                                        <li class="pl-3">C. Menyebutkan berbagai saluran mobilitas sosial, seperti
+                                            pendidikan,
+                                            organisasi politik, dan organisasi ekonomi.</li>
+                                        <li class="pl-3">D. Menggambarkan bagaimana mobilitas sosial dapat mempengaruhi
+                                            integrasi sosial
+                                            dan perubahan sosial dalam masyarakat.
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <a href=""
+                                        class="rounded-full border-[1px] px-[25px] py-[6px] border-[#c5c5c5] hover:shadow-sm text-[14px] lg:hover:text-[#515151]">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6">
+                                    <p class="text-[24px] text-[#292929] mb-1">Lembaga Sosial
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Setelah mengikuti pembelajaran pada
+                                        materi “Lembaga Sosial”, siswa diharapkan mampu:
+                                    <ol class="text-[16px] text-[#888888] mb-6">
+                                        <li class="pl-3">A. Menjelaskan pengertian lembaga sosial serta peran dan fungsi
+                                            lembaga sosial dalam kehidupan sehari-hari.
+                                        </li>
+                                        <li class="pl-3">B. Mengidentifikasi dan menjelaskan bagaimana nilai dan norma
+                                            membentuk dan dipengaruhi oleh lembaga sosial dalam masyarakat.</li>
+                                        <li class="pl-3">C. Mengategorikan dan memberikan contoh nilai material, vital,
+                                            kerohanian, serta norma agama, kesusilaan, kesopanan, dan hukum.</li>
+                                        <li class="pl-3">D. Menggambarkan bagaimana lembaga sosial berkontribusi
+                                            terhadap pemanfaatan sumber daya alam dan pengembangan sumber daya manusia
+                                            secara berkelanjutan.
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <a href=""
+                                        class="rounded-full border-[1px] px-[25px] py-[6px] border-[#c5c5c5] hover:shadow-sm text-[14px] lg:hover:text-[#515151]">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex lg:gap-10">
+                    <div class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6">
+                                    <p class="text-[24px] text-[#292929] mb-1">Konflik dan Integrasi Sosial
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Setelah mengikuti pembelajaran pada
+                                        materi “Konflik dan Integrasi Sosial”, siswa diharapkan mampu:
+                                    <ol class="text-[16px] text-[#888888] mb-6">
+                                        <li class="pl-3">A. Menjelaskan pengertian konflik sosial dan penyebabnya dalam
+                                            kehidupan masyarakat.
+                                        </li>
+                                        <li class="pl-3">B. Menganalisis dampak positif dan negatif dari konflik sosial
+                                            terhadap individu dan kelompok.
+                                            konteks kehidupan sehari-hari.</li>
+                                        <li class="pl-3">C. Mengidentifikasi cara penanganan konflik sosial dalam
+                                            berbagai situasi.</li>
+                                        <li class="pl-3">D. Menjelaskan pengertian integrasi sosial serta syarat
+                                            terjadinya integrasi dalam masyarakat.
+                                        </li>
+                                        <li class="pl-3">E. Menggambarkan bentuk-bentuk integrasi sosial dan proses
+                                            akulturasi serta asimilasi.
+                                        </li>
+                                        <li class="pl-3">F. Menyusun strategi untuk menciptakan toleransi dan kerukunan
+                                            antar kelompok dalam masyarakat.
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <a href=""
+                                        class="rounded-full border-[1px] px-[25px] py-[6px] border-[#c5c5c5] hover:shadow-sm text-[14px] lg:hover:text-[#515151]">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6">
+                                    <p class="text-[24px] text-[#292929] mb-1">Kolonialisme dan Imperialisme di
+                                        Indonesia
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Setelah mengikuti pembelajaran pada
+                                        materi “Kolonialisme dan Imperialisme di Indonesia”, siswa diharapkan mampu:
+                                    <ol class="text-[16px] text-[#888888] mb-6">
+                                        <li class="pl-3">A. Menjelaskan pengertian kolonialisme dan imperialisme serta
+                                            perbedaannya.
+                                        </li>
+                                        <li class="pl-3">B. Menganalisis faktor pendorong kedatangan bangsa Barat ke
+                                            Indonesia.
+                                        </li>
+                                        <li class="pl-3">C. Mengidentifikasi dampak kolonialisme dan imperialisme
+                                            terhadap masyarakat Indonesia.</li>
+                                        <li class="pl-3">D. Menjelaskan proses perlawanan rakyat Indonesia terhadap
+                                            penjajahan.
+                                        </li>
+                                        <li class="pl-3">E. Menganalisis pengaruh pendudukan Jepang terhadap kehidupan
+                                            masyarakat Indonesia.
+                                        </li>
+                                        <li class="pl-3">F. Menggambarkan perubahan sosial, ekonomi, dan politik akibat
+                                            kolonialisme dan pendudukan.
+                                        </li>
+                                    </ol>
+                                    </p>
+                                    <a href=""
+                                        class="rounded-full border-[1px] px-[25px] py-[6px] border-[#c5c5c5] hover:shadow-sm text-[14px] lg:hover:text-[#515151]">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8 lg:w-1/2 lg:mx-auto">
+                    <div class="block p-4">
+                        <div class="lg:flex lg:justify-center lg:items-center">
+                            <div class="p-6">
+                                <p class="text-[24px] text-[#292929] mb-1">Kolonialisme dan Imperialisme di
+                                    Indonesia
+                                </p>
+                                <p class="text-[16px] text-[#888888] mb-4">Setelah mengikuti pembelajaran pada
+                                    materi “Kolonialisme dan Imperialisme di Indonesia”, siswa diharapkan mampu:
+                                <ol class="text-[16px] text-[#888888] mb-6">
+                                    <li class="pl-3">A. Menjelaskan pengertian kolonialisme dan imperialisme serta
+                                        perbedaannya.
+                                    </li>
+                                    <li class="pl-3">B. Menganalisis faktor pendorong kedatangan bangsa Barat ke
+                                        Indonesia.
+                                    </li>
+                                    <li class="pl-3">C. Mengidentifikasi dampak kolonialisme dan imperialisme
+                                        terhadap masyarakat Indonesia.</li>
+                                    <li class="pl-3">D. Menjelaskan proses perlawanan rakyat Indonesia terhadap
+                                        penjajahan.
+                                    </li>
+                                    <li class="pl-3">E. Menganalisis pengaruh pendudukan Jepang terhadap kehidupan
+                                        masyarakat Indonesia.
+                                    </li>
+                                    <li class="pl-3">F. Menggambarkan perubahan sosial, ekonomi, dan politik akibat
+                                        kolonialisme dan pendudukan.
+                                    </li>
+                                </ol>
+                                </p>
+                                <a href=""
+                                    class="rounded-full border-[1px] px-[25px] py-[6px] border-[#c5c5c5] hover:shadow-sm text-[14px] lg:hover:text-[#515151]">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll Reveal JS -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

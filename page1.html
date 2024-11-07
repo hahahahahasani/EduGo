@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Page 1</title>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-30 bg-transparent">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+                <!-- Logo -->
+                <a href="">
+                    <!-- <h5 class="text-white text-[24px] py-4">Edugo</h5> -->
+                    <img src="assets/hero/logo.png" alt="" class="w-[90px] h-[100px] lg:w-[100px]">
+                </a>
+                <!-- Toggle Button -->
+                <div class="flex items-center">
+                    <button id="burger" name="burger" type="button" class="block absolute right-2 lg:hidden">
+                        <span class="burger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="burger-line transition duration-300 ease-in-out"></span>
+                        <span class="burger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-gray-200 shadow-lg w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group w-1/5">
+                                <a href="index.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white ">Home</a>
+                            </li>
+                            <li class="group w-1/4">
+                                <a href="page1.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Materi</a>
+                            </li>
+                            <li class="group w-full">
+                                <a href="page2.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Indikator
+                                    Pembelajaran</a>
+                            </li>
+                            <li class="group w-1/5">
+                                <a href="kuis.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Kuis</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <!-- Header Content -->
+        <section
+            class="hero-page h-[250px] xl:h-[350px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed relative z-20">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div class="hero__text w-[567px] xl:w-[900px] flex flex-col items-center text-[#EDEDED]">
+                    <h1 class="h1 mt-6 text-center font-bold">Materi Pembelajaran</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <div class="container mx-auto block my-20">
+            <div class="lg:flex lg:items-center lg:justify-between mb-14">
+                <p class="text-[40px] mb-2 lg:mb-0">Materi</p>
+                <p class="text-[16px] text-[#888888] w-[340px]">Silahkan akses materi yang telah disediakan dibawah
+                    ini</p>
+            </div>
+            <div class="">
+                <ul class="">
+                    <li class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:gap-6 lg:justify-center lg:items-center">
+                                <img src="assets/gambar materi/materi 1.jpg" alt=""
+                                    class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:w-[380px] lg:h-[280px] lg:mb-0">
+                                <div class="">
+                                    <p class="text-[24px] text-[#292929] mb-1">Mobilitas Sosial
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Kehidupan di tengah masyarakat selalu
+                                        berkembang dan berubah. Salah satu aspek penting dari perubahan ini adalah
+                                        dinamika kependudukan. Di Indonesia, dinamika ini terlihat dari bagaimana
+                                        jumlah penduduk terus mengalami fluktuasi setiap harinya. Hal ini disebabkan
+                                        oleh kelahiran, kematian, dan perpindahan penduduk (migrasi).</p>
+                                    <a href="" class="btn-secondary text-[14px] lg:hover:text-[#515151]">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:gap-6 lg:justify-center lg:items-center">
+                                <img src="assets/gambar materi/materi 2.jpeg" alt=""
+                                    class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:w-[380px] lg:h-[280px] lg:mb-0">
+                                <div class="">
+                                    <p class="text-[24px] text-[#292929] mb-1">Lembaga Sosial (Nilai,Norma,Sosial)
+                                        Di Masyarakat
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Manusia adalah makhluk sosial yang
+                                        menghabiskan hidupnya berinteraksi dengan individu lain. Sosialisasi adalah
+                                        proses sosial seumur hidup yang memungkinkan kita mempelajari pola budaya,
+                                        perilaku, dan harapan. Melalui sosialisasi, kita mempelajari nilai-nilai
+                                        budaya, norma, dan peran yang berlaku dalam masyarakat.</p>
+                                    <a href="" class="btn-secondary text-[14px] lg:hover:text-[#515151]">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:gap-6 lg:justify-center lg:items-center">
+                                <img src="assets/gambar materi/materi 3.jpg" alt=""
+                                    class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:w-[380px] lg:h-[280px] lg:mb-0">
+                                <div class="">
+                                    <p class="text-[24px] text-[#292929] mb-1">Konflik dan Integrasi Sosial
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Konflik dan integrasi sosial
+                                        merupakan dua fenomena yang saling berkaitan dalam dinamika masyarakat.
+                                        Konflik muncul akibat perbedaan kepentingan, nilai, atau pandangan,
+                                        sementara integrasi sosial berperan dalam menyatukan individu-individu atau
+                                        kelompok dengan tujuan menjaga keharmonisan. Pemahaman yang mendalam
+                                        mengenai kedua konsep ini penting untuk melihat bagaimana masyarakat
+                                        mengelola perbedaan demi terciptanya stabilitas dan kerjasama.</p>
+                                    <a href="" class="btn-secondary text-[14px] lg:hover:text-[#515151]">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-10 border border-gray-200 rounded-lg shadow-md lg:mb-8">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:gap-6 lg:justify-center lg:items-center">
+                                <img src="assets/gambar materi/materi 4.jpg" alt=""
+                                    class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:w-[380px] lg:h-[280px] lg:mb-0">
+                                <div class="">
+                                    <p class="text-[24px] text-[#292929] mb-1">Kolonialisme dan Imperialisme di
+                                        Indonesia
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4">Kolonialisme dan imperialisme di
+                                        Indonesia merupakan bagian penting dari sejarah bangsa yang membawa dampak
+                                        besar terhadap berbagai aspek kehidupan masyarakat. Kedua istilah ini
+                                        merujuk pada upaya negara-negara asing untuk menguasai dan mengeksploitasi
+                                        wilayah-wilayah di Nusantara, baik melalui dominasi politik, ekonomi, maupun
+                                        budaya. Proses penjajahan ini tidak hanya meninggalkan warisan berupa
+                                        penderitaan dan penindasan, tetapi juga mendorong lahirnya pergerakan
+                                        nasional yang berjuang untuk meraih kemerdekaan dan kedaulatan bangsa.</p>
+                                    <a href="kolonial.html"
+                                        class="btn-secondary text-[14px] lg:hover:text-[#515151]">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="content-page my-20">
+
+        </section>
+    </main>
+
+    <!-- Scroll Reveal JS -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

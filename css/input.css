@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-primary text-[18px] text-[#4B4B4B];
+}
+
+a {
+    @apply text-[16px] hover:text-[#515151] transition-all duration-300 lg:hover:text-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-primary;
+}
+
+.h1 {
+    @apply text-[46px] lg:text-[54px] leading-tight;
+}
+
+.h2 {
+    @apply text-[40px] leading-tight;
+}
+
+.h3 {
+    @apply text-[25px];
+}
+
+.btn {
+    @apply h-[46px] px-[30px] transition-all duration-300 text-[#3c3c3c] rounded-full flex items-center gap-2;
+}
+
+.btn-primary {
+    @apply bg-[#AFEB7B] hover:bg-[#A6EB6B];
+}
+
+.btn-secondary {
+    @apply rounded-full border-[1px] px-[20px] py-[6px] border-[#c5c5c5] hover:shadow-sm;
+}
+
+.burger-line {
+    @apply w-[24px] h-[2px] my-[6px] block bg-white;
+}
+
+.burger-active>span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.burger-active>span:nth-child(2) {
+    @apply scale-0;
+}
+
+.burger-active>span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.nav-fixed {
+    @apply fixed z-50 bg-gray-400 bg-opacity-50;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-animation {
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-animation:hover {
+    transform: scale(1.05);
+}
+
+.btn-correct {
+    animation: correctAnimation 0.5s ease-in-out;
+}
+
+.btn-incorrect {
+    animation: incorrectAnimation 0.5s ease-in-out;
+}
+
+@keyframes correctAnimation {
+    0% {
+        background-color: #10b981;
+        /* Tailwind green-500 */
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: #16a34a;
+        /* Slightly darker green */
+        transform: scale(1.1);
+    }
+
+    100% {
+        background-color: #10b981;
+        transform: scale(1);
+    }
+}
+
+@keyframes incorrectAnimation {
+    0% {
+        background-color: #ef4444;
+        /* Tailwind red-500 */
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: #dc2626;
+        /* Slightly darker red */
+        transform: scale(1.1);
+    }
+
+    100% {
+        background-color: #ef4444;
+        transform: scale(1);
+    }
+}

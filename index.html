@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full flex items-center z-30 bg-transparent">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between relative">
+                <!-- Logo -->
+                <a href="">
+                    <!-- <h5 class="text-white text-[24px] py-4">Edugo</h5> -->
+                    <img src="assets/hero/logo.png" alt="" class="w-[90px] h-[100px] lg:w-[100px]">
+                </a>
+                <!-- Toggle Button -->
+                <div class="flex items-center">
+                    <button id="burger" name="burger" type="button" class="block absolute right-2 lg:hidden">
+                        <span class="burger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="burger-line transition duration-300 ease-in-out"></span>
+                        <span class="burger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-gray-200 shadow-lg w-full right-2 top-full lg:block lg:static lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group w-1/4">
+                                <a href=""
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Home</a>
+                            </li>
+                            <li class="group w-1/4">
+                                <a href="page1.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Materi</a>
+                            </li>
+                            <li class="group w-full">
+                                <a href="page2.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Indikator
+                                    Pembelajaran</a>
+                            </li>
+                            <li class="group w-1/5">
+                                <a href="kuis.html"
+                                    class="my-2 mx-8 flex group-hover:border-b-[1px] group-hover:border-black group-hover:transition group-hover:duration-300 lg:text-white lg:group-hover:border-white">Kuis</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+        <!-- Hero -->
+        <section
+            class="hero-page h-[700px] xl:h-[560px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed relative z-20">
+            <div class="container mx-auto h-full flex items-center justify-center">
+                <div class="hero__text w-[567px] xl:w-[1140px] flex flex-col items-center text-[#EDEDED]">
+                    <h1 class="h1 font-semibold mb-8 leading-10 xl:text-center">Belajar Lebih Mudah dan Menyenangkan
+                        Dimana Saja!
+                    </h1>
+                    <p class="font-medium mb-8 xl:text-center xl:border-2 xl:px-4 xl:py-1">Akses materi pembelajaran,
+                        video, kuis interaktif, dan
+                        <span class="italic">funfact</span>
+                    </p>
+                    <p
+                        class="bg-[#cecccc] self-start px-6 py-2 text-xl font-semibold text-[#292929] rounded-lg font-third lg:self-center">
+                        EduGo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="content-page my-20">
+            <div class="container mx-auto block">
+                <div class="lg:flex lg:items-center lg:justify-end mb-14">
+                    <p class=""></p>
+                    <p class="text-[16px] text-[#888888] w-[200px]">Why Choose us?</p>
+                </div>
+                <div class="lg:flex lg:gap-20 lg:justify-center lg:items-center">
+                    <div class="block mb-10">
+                        <img src="assets/hero/ask.png" alt=""
+                            class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:h-[500px]">
+                    </div>
+                    <ul class="">
+                        <li class="mb-10 lg:mb-8">
+                            <div class="block lg:flex lg:gap-6">
+                                <div class="">
+                                    <p class="text-[38px] text-[#292929] mb-4 font-semibold">Kenapa Belajar Menggunakan
+                                        Edugo?
+                                    </p>
+                                    <div class="flex gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6 mt-[3px] text-[#26ae41]">
+                                            <path
+                                                d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 3.04879L5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879ZM16.4524 8.22183L17.8666 9.63604L11.5026 16L7.25999 11.7574L8.67421 10.3431L11.5019 13.1709L16.4524 8.22183Z">
+                                            </path>
+                                        </svg>
+                                        <p class="text-[20px] text-[#888888] mb-4">Materi Lengkap dan Terstruktur</p>
+                                    </div>
+                                    <div class="flex gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6 mt-[3px] text-[#26ae41]">
+                                            <path
+                                                d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 3.04879L5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879ZM16.4524 8.22183L17.8666 9.63604L11.5026 16L7.25999 11.7574L8.67421 10.3431L11.5019 13.1709L16.4524 8.22183Z">
+                                            </path>
+                                        </svg>
+                                        <p class="text-[20px] text-[#888888] mb-4">Kuis interaktif</p>
+                                    </div>
+                                    <div class="flex gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6 mt-[3px] text-[#26ae41]">
+                                            <path
+                                                d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 3.04879L5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879ZM16.4524 8.22183L17.8666 9.63604L11.5026 16L7.25999 11.7574L8.67421 10.3431L11.5019 13.1709L16.4524 8.22183Z">
+                                            </path>
+                                        </svg>
+                                        <p class="text-[20px] text-[#888888] mb-4">Akses Mudah dan Fleksibel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-page my-20">
+            <div class="container mx-auto block">
+                <div class="lg:flex lg:gap-20 lg:justify-center lg:items-center">
+                    <ul class="w-1/2">
+                        <li class="mb-10 lg:mb-8">
+                            <div class="block lg:flex lg:gap-6">
+                                <div class="">
+                                    <div class="flex gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-7 h-7 mt-[3px] text-[#26ae41]">
+                                            <path
+                                                d="M11.9998 1L6 11H18L11.9998 1ZM11.9998 4.8873L14.4676 9H9.53232L11.9998 4.8873ZM6.75 20C5.23122 20 4 18.7688 4 17.25C4 15.7312 5.23122 14.5 6.75 14.5C8.26878 14.5 9.5 15.7312 9.5 17.25C9.5 18.7688 8.26878 20 6.75 20ZM6.75 22C9.37335 22 11.5 19.8734 11.5 17.25C11.5 14.6266 9.37335 12.5 6.75 12.5C4.12665 12.5 2 14.6266 2 17.25C2 19.8734 4.12665 22 6.75 22ZM15 15.5V19.5H19V15.5H15ZM13 21.5V13.5H21V21.5H13Z">
+                                            </path>
+                                        </svg>
+                                        <p class="text-[20px] text-[#888888] mb-4">Materi kami dirancang secara
+                                            interaktif dengan video, kuis, dan aktivitas diskusi agar anda tetap
+                                            terlibat dan memahami konsep dengan mendalam</p>
+                                    </div>
+                                    <div class="flex gap-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-7 h-7 mt-[3px] text-[#26ae41]">
+                                            <path
+                                                d="M11.9998 1L6 11H18L11.9998 1ZM11.9998 4.8873L14.4676 9H9.53232L11.9998 4.8873ZM6.75 20C5.23122 20 4 18.7688 4 17.25C4 15.7312 5.23122 14.5 6.75 14.5C8.26878 14.5 9.5 15.7312 9.5 17.25C9.5 18.7688 8.26878 20 6.75 20ZM6.75 22C9.37335 22 11.5 19.8734 11.5 17.25C11.5 14.6266 9.37335 12.5 6.75 12.5C4.12665 12.5 2 14.6266 2 17.25C2 19.8734 4.12665 22 6.75 22ZM15 15.5V19.5H19V15.5H15ZM13 21.5V13.5H21V21.5H13Z">
+                                            </path>
+                                        </svg>
+                                        <p class="text-[20px] text-[#888888] mb-4">Kami menyediakan sumber belajar yang
+                                            dapat diakses kapan saja, ditambah dengan funfact, video, kuis, dan materi
+                                            untuk mendukung pembelajaran mandiri anda</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="block">
+                        <img src="assets/hero/laptop.jpg" alt=""
+                            class="w-full h-[240px] bg-cover bg-center rounded-xl mb-4 lg:h-[500px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-page my-20">
+            <div class="container mx-auto block">
+                <h1 class="text-[52px] font-bold text-center mb-4">FITUR UNGGULAN</h1>
+                <p class="text-[18px] text-center mb-10">Kami hadirkan inovasi terdepan Website EduGo</p>
+                <div class="lg:flex lg:gap-10">
+                    <div class="mb-10 lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6 grid place-items-center">
+                                    <img src="/assets/hero/flexibel.png" alt="" class="w-[200px]">
+                                    <p class="text-[24px] text-[#292929] mb-1">Akses Fleksibel
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4 text-center">EduGo dirancang untuk diakses
+                                        melalui
+                                        browser di berbagai perangkat (PC, Laptop, tablet, dan ponsel) tanpa perlu
+                                        unduhan tambahan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6 grid place-items-center">
+                                    <img src="/assets/hero/visual.png" alt="" class="w-[220px]">
+                                    <p class="text-[24px] text-[#292929] mb-1">Desain visual
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4 text-center">Menyediakan visual yang
+                                        menarik, termasuk video dan animasi yang relevan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex lg:gap-10">
+                    <div class="mb-10 lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6 grid place-items-center">
+                                    <img src="/assets/hero/navigasi.png" alt="" class="w-[200px]">
+                                    <p class="text-[24px] text-[#292929] mb-1">Navigasi Mudah Dipahami
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4 text-center">Struktur menu yang intuitif
+                                        memungkingkan pengguna menemukan materi, video, atau kuis dengan cepat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 lg:mb-8 lg:w-full">
+                        <div class="block p-4">
+                            <div class="lg:flex lg:justify-center lg:items-center">
+                                <div class="p-6 grid place-items-center">
+                                    <img src="/assets/hero/lesson.png" alt="" class="w-[200px]">
+                                    <p class="text-[24px] text-[#292929] mb-1">Materi interaktif
+                                    </p>
+                                    <p class="text-[16px] text-[#888888] mb-4 text-center">Website ini menyajikan materi
+                                        dengan cara menarik, termasuk video pembelajaran, fakta menarik, dan animasi
+                                        visual yang dirancang untuk memperkaya pengalaman belajar siswa secara
+                                        interaktif
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Temporary div -->
+    <!-- <div class="h-[1200px]"></div> -->
+
+    <!-- Footer -->
+    <div class="bg-white h-[500px] lg:h-[400px]">
+        <div class="container mx-auto block items-center mb-10">
+            <p class="text-[36px] lg:text-[72px] lg:w-[900px] mb-6">Mari belajar dan mengerjakan kuis bersama.
+            </p>
+            <div class="block lg:flex lg:items-center lg:justify-between">
+                <a href="page1.html" class="btn btn-primary w-[160px] mb-8">Mulai Belajar</a>
+                <ul class="px-4 lg:flex lg:gap-8">
+                    <li class="mb-2"><a href="index.html"
+                            class="hover:border-b-[1px] hover:pb-[2px] hover:border-black text-[18px]">Home</a></li>
+                    <li class="mb-2"><a href="page1.html"
+                            class="hover:border-b-[1px] hover:pb-[2px] hover:border-black text-[18px]">Materi</a></li>
+                    <li class="mb-2"><a href="page2.html"
+                            class="hover:border-b-[1px] hover:pb-[2px] hover:border-black text-[18px]">Indikator
+                            Pembelajaran</a></li>
+                    <li class="mb-2"><a href="kuis.html"
+                            class="hover:border-b-[1px] hover:pb-[2px] hover:border-black text-[18px]">Kuis</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="h-[540px] lg:h-[380px] w-full">
+            <div class="bg-[#f5f2ec]">
+                <div class="mx-auto w-full max-w-screen-xl p-4 py-6">
+                    <div class="md:flex md:justify-between">
+                        <div class="grid gap-8 mb-10 sm:gap-20 sm:grid-cols-3">
+                            <div>
+                                <ul class="text-gray-800 dark:text-gray-400 font-medium">
+                                    <li>
+                                        <img src="assets/hero/logo.png" alt="" class="w-[160px] h-[180px]">
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://flowbite.com/" class="hover:underline">Jl. Gajayana No.50,
+                                            Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65144</a>
+                                    </li>
+                                    <li class="flex gap-2">
+                                        <i class="ri-mail-line"></i>
+                                        <a href="https://tailwindcss.com/"
+                                            class="hover:underline">afifberlian@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="mb-6 text-sm font-semibold text-gray-900 uppercase mt-8">Ikuti Saya
+                                </p>
+                                <ul class="text-gray-800 dark:text-gray-400 font-medium">
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite"
+                                            class="hover:underline ">Instagram</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite"
+                                            class="hover:underline ">Youtube</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="https://github.com/themesberg/flowbite"
+                                            class="hover:underline ">Twitter</a>
+                                    </li>
+                                    <li>
+                                        <p class="mb-6 text-sm font-semibold text-gray-900 uppercase mt-8">Lainnya
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Profil
+                                            Saya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-8 md:mb-0 lg:w-[320px]">
+                            <div
+                                class="bg-gray-100 w-full h-[270px] flex justify-center items-center border border-slate-300 rounded-lg">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.4624057776855!2d112.60483417447107!3d-7.951073692073349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78815e45bbc56d%3A0x5031ab2d7d36dba6!2sUniversitas%20Islam%20Negeri%20Maulana%20Malik%20Ibrahim%20Malang!5e0!3m2!1sid!2sid!4v1729695483514!5m2!1sid!2sid"
+                                    width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-6 border-gray-400 sm:mx-auto lg:my-8" />
+                    <div class="sm:flex sm:items-center sm:justify-center">
+                        <span class="text-sm text-gray-800 sm:text-center">© 2024 Afif Berlian.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll Reveal JS -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Flowbite -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
