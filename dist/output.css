@@ -2076,6 +2076,18 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-\[350px\] {
+  height: 350px;
+}
+
+.h-\[440px\] {
+  height: 440px;
+}
+
+.h-\[340px\] {
+  height: 340px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
