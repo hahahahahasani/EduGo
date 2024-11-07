@@ -2504,7 +2504,7 @@ input:checked + .toggle-bg {
 }
 
 .bg-hero {
-  background-image: url(assets/hero/bg.jpg);
+  background-image: url(/assets/hero/bg.jpg);
 }
 
 .from-green-300 {
