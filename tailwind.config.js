@@ -17,7 +17,7 @@ module.exports = {
       xl: '1200px'
     },
     backgroundImage: {
-      hero: 'url(/assets/hero/bg.jpg)'
+      hero: 'url(assets/hero/bg.jpg)'
     },
     fontFamily: {
       primary: 'Lato',
