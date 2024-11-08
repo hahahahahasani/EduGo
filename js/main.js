@@ -204,7 +204,7 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
-let score = 0;
+let correctAnswers = 0; // Menghitung jumlah jawaban benar
 
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
@@ -212,7 +212,7 @@ const nextButton = document.getElementById('next-btn');
 
 function startQuiz() {
     currentQuestionIndex = 0;
-    score = 0;
+    correctAnswers = 0;
     nextButton.innerText = 'Berikutnya';
     showQuestion();
 }
@@ -246,7 +246,7 @@ function selectAnswer(e) {
     const isCorrect = selectedButton.dataset.correct === 'true';
     if (isCorrect) {
         selectedButton.classList.add('bg-green-500', 'btn-correct');
-        score++;
+        correctAnswers++; // Menambahkan jumlah jawaban benar
     } else {
         selectedButton.classList.add('bg-red-500', 'btn-incorrect');
     }
@@ -261,7 +261,8 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    questionElement.innerText = `Anda menjawab ${score} dari ${questions.length} pertanyaan dengan benar!`;
+    const score = (correctAnswers / questions.length) * 100; // Menghitung skor dengan nilai maksimal 100
+    questionElement.innerText = `Skor Anda: ${score.toFixed(2)} dari 100.`;
     nextButton.innerText = 'Mulai Lagi';
     nextButton.style.display = 'block';
 }
