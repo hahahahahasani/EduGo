@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    @apply text-[16px] hover:text-[#515151] transition-all duration-300 lg:hover:text-white;
+    @apply text-[16px] hover:text-[#515151] transition-all duration-300;
 }
 
 h1,
