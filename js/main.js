@@ -19,6 +19,25 @@ window.onscroll = function () {
     }
 }
 
+// Togle details
+document.addEventListener("DOMContentLoaded", () => {
+    const detailsElements = document.querySelectorAll("details");
+
+    detailsElements.forEach((details) => {
+        details.addEventListener("toggle", () => {
+            if (details.open) {
+                // Tutup semua details lainnya
+                detailsElements.forEach((otherDetails) => {
+                    if (otherDetails !== details && otherDetails.open) {
+                        otherDetails.open = false;
+                    }
+                });
+            }
+        });
+    });
+});
+
+
 // Quiz logic
 const questions = [
     {
